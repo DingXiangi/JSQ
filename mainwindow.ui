@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>计算器-丁翔-2023414300203</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::RightToLeft</enum>
   </property>
   <property name="styleSheet">
    <string notr="true">QPushButton{
@@ -26,6 +29,9 @@ QPushButton:hover{
 QPushButton:pressed{
     background-color:red;
     color: black
+}
+QLineEdit{
+front-size:48pt;
 }
 </string>
   </property>

@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <QStack>
+#include <QKeyEvent>
+#include<QMap>
+#include<QPushButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,8 +26,9 @@ public:
     QString opcode;
     QStack<QString> operands;
     QStack<QString> opcodes;
+    QMap<int,QPushButton*> digitBTNs;
 
-    QString calculation(bool *ok);
+    QString calculation(bool *ok = NULL);
 
 private slots:
     void btnNumClicked();
@@ -38,6 +42,7 @@ private slots:
 
     void on_btnEqual_clicked();
 
+    virtual void KeyPressEvent(QKeyEvent *event);
 private:
     Ui::MainWindow *ui;
 
