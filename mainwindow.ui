@@ -13,6 +13,22 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+background-color: rgb(255,192,192);
+front-size: 24pt;
+}
+
+QPushButton:hover{
+    background-color:lightgreen;
+    color: black
+}
+QPushButton:pressed{
+    background-color:red;
+    color: black
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
@@ -55,6 +71,9 @@
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 700 9pt &quot;Microsoft YaHei UI&quot;;</string>
         </property>
         <property name="text">
          <string>%</string>
